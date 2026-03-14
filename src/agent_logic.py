@@ -1,14 +1,12 @@
-def interpret_query(query: str):
+class Agent:
 
-    query = query.lower()
+    def decide(self, input_signal):
 
-    if "payment" in query:
-        return {"domain": "payments", "action": "fetch_transactions"}
+        if input_signal == "high_risk_transaction":
+            return "review"
 
-    if "risk" in query:
-        return {"domain": "risk", "action": "fetch_risk_score"}
+        elif input_signal == "low_risk_transaction":
+            return "approve"
 
-    if "customer" in query:
-        return {"domain": "customer", "action": "fetch_customer_profile"}
-
-    return {"domain": "unknown", "action": "none"}
+        else:
+            return "reject"
