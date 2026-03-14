@@ -1,0 +1,7 @@
+dataset: customers
+owner: customer-domain
+schema:
+  - name: customer_id
+    type: int
+  - name: income
+    type: float

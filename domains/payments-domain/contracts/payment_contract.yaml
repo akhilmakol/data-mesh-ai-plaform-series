@@ -1,0 +1,4 @@
+dataset: payments
+schema:
+  - name: payment_id
+  - name: status

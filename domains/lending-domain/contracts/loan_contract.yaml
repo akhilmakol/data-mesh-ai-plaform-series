@@ -1,0 +1,4 @@
+dataset: loans
+schema:
+  - name: loan_id
+  - name: loan_amount
