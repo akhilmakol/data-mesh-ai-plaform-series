@@ -4,6 +4,7 @@
 
 ![Coverage](https://img.shields.io/badge/Coverage-85%25-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.9+-blue)
 
 A reference implementation demonstrating how **Data Mesh architecture can power enterprise AI and Agentic systems**.
 
