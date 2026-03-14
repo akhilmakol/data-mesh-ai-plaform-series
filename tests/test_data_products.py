@@ -26,3 +26,10 @@ def test_data_product_schema():
     assert "name" in product
     assert "domain" in product
     assert "owner" in product
+
+def test_data_products_structure():
+    products = get_data_products()
+
+    for product in products:
+        assert isinstance(product["name"], str)
+        assert isinstance(product["domain"], str)    
