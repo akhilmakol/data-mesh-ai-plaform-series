@@ -4,3 +4,5 @@ scikit-learn
 pyyaml
 jupyter
 boto3
+pytest
+pandas
