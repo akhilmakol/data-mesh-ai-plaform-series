@@ -6,8 +6,6 @@
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 
-A reference implementation demonstrating how **Data Mesh architecture can power enterprise AI and Agentic systems**.
-
 ### Enterprise Reference Architecture for Building Scalable AI Platforms
 
 Domain Data Products • Lakehouse • Feature Store • Agentic AI • Governance
