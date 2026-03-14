@@ -19,3 +19,7 @@ jobs:
 
       - name: Run pipeline
         run: python ai-platform/pipelines/training_pipeline.py
+        
+      - name: Run tests
+        run: |
+        PYTHONPATH=. pytest -v  
