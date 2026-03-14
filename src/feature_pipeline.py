@@ -1,28 +1,15 @@
-from src.agent_logic import interpret_query
+import pandas as pd
 
 
-def test_agent_understands_payment_query():
+def generate_features(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Generate simple feature engineering outputs
+    for the Data Mesh AI platform demo.
+    """
 
-    query = "show payment transactions"
+    df = df.copy()
 
-    result = interpret_query(query)
+    if "amount" in df.columns and "transactions" in df.columns:
+        df["avg_transaction_value"] = df["amount"] / df["transactions"]
 
-    assert result["domain"] == "payments"
-
-
-def test_agent_understands_risk_query():
-
-    query = "get risk score for customer"
-
-    result = interpret_query(query)
-
-    assert result["domain"] == "risk"
-
-
-def test_agent_returns_action():
-
-    query = "customer profile"
-
-    result = interpret_query(query)
-
-    assert "action" in result
+    return df
